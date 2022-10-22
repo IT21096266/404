@@ -12,6 +12,10 @@
     <color name="secondaryDarkColor">#0026ca</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="Sporty_green">#5DFF65</color>
+    <color name="colorPrimary">#097054</color>
+    <color name="dark_green">#062c30</color>
+    <color name="teal_700">#FF018786</color>
 
 </resources>
 

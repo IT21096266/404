@@ -34,5 +34,55 @@
     <string name="homeMenu">Home</string>
     <string name="healthMenu">Health</string>
     <string name="routinesMenu">Routines</string>
+
+    //MEAL
+    <string name="meal">Meal</string>
+    <string name="todo1">TODO</string>
+    <string name="tv_add_meal">Add your meal</string>
+    <string name="tv_edit_meal">Edit your meal</string>
+    <string name="et_meal_name">Meal Name</string>
+    <string name="spinner_meal_category">Category</string>
+    <string name="spinner_meal_type">Meal Type</string>
+    <string name="et_meal_calories">Calories</string>
+    <string name="add_meal">Add Meal</string>
+    <string name="edit_meal">Edit Meal</string>
+    <string name="view_meal">View Meal</string>
+    <string name="btn_calculate_energy">Energy Calculator</string>
+    <string name="tv_meal_item_name">Meal Name : </string>
+    <string name="tv_meal_item_category">Meal Category : </string>
+    <string name="tv_meal_item_type">Meal Type : </string>
+    <string name="tv_meal_item_calories">Calories : </string>
+    <string name="btn_meal_item_edit">Edit</string>
+    <string name="btn_meal_item_delete">Delete</string>
+    <string name="energy_calculator">Energy Calculator</string>
+    <string name="tv_energy_calculator">Calculate Energy</string>
+    <string name="et_enter_calories">Enter The Number Of Calories</string>
+    <string name="btn_energy_calc">Calculate</string>
+    <string name="tv_convert_to">Calculate To …</string>
+    <string name="tv_energy_answer_txt">Answer Is …</string>
+    <string name="rd_btn_kj">Kilo Joules</string>
+    <string name="rd_btn_j">Joules</string>
+    //MUSIC PLAYER
+    <string name="btn_music">Music Player</string>
+    <string name="tv_music">Music Player</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_stop">Stop</string>
+    <string name="music_player">Music Player</string>
+    <string name="add_meals">Add Meals</string>
+    <string name="meal_type">meal type</string>
+    <string name="add">ADD</string>
+    <string name="nutrition_type">nutrition type</string>
+    <string name="calorie_amount">calorie amount</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="edit_meals">Edit Meals</string>
+    <string name="lunch">Lunch</string>
+    <string name="rice">rice</string>
+    <string name="edit">EDIT</string>
+    <string name="carbohydrates">carbohydrates</string>
+    <string name="_50kcal">50Kcal</string>
+    <string name="innovated_by">Innovated by</string>
+    <string name="_404_found">404 FOUND</string>
+    <string name="todo">TODO</string>
 </resources>
 
