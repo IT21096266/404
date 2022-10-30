@@ -29,14 +29,14 @@ public class HomeFragment extends Fragment {
         View view =inflater.inflate(R.layout.fragment_home,container,false);
 
 
-        cardView1=view.findViewById(R.id.cardView1);
+        /*cardView1=view.findViewById(R.id.cardView1);
         cardView1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 FragmentTransaction fr= getFragmentManager().beginTransaction();
                 fr.replace(R.id.frame_layout,new fragment_meal());
                 fr.commit();
             }
-        });
+        });*/
 
 
 
