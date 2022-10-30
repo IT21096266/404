@@ -51,5 +51,6 @@
     <string name="weekly">Weekly</string>
     <string name="new_event">New Event</string>
     <string name="daily">Daily</string>
+    <string name="monday">Monday</string>
 </resources>
 
