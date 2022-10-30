@@ -4,38 +4,30 @@ package com.example.health;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Spinner;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class AddWorkoutPlan extends AppCompatActivity {
 
-    EditText Workout_Name,Workout_Repetition,Workout_Sets,Workout_Time;
+    EditText workoutName, workoutRepetition, workoutSets, workoutTime;
     Button btn_Workout_Submit,btn_Workout_Update,btn_Workout_View,btn_Workout_Delete;
     DBWorkout dbWorkout;
-    ImageView img_backtoworkoutPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_workout_plan);
 
-        Workout_Name = (EditText) findViewById(R.id.workout_name);
-        Workout_Repetition =(EditText) findViewById(R.id.workout_repetition);
-        Workout_Sets =(EditText) findViewById(R.id.workout_sets);
-        Workout_Time =(EditText) findViewById(R.id.workout_time);
+        workoutName = (EditText) findViewById(R.id.workout_name);
+        workoutRepetition =(EditText) findViewById(R.id.workout_repetition);
+        workoutSets =(EditText) findViewById(R.id.workout_sets);
+        workoutTime =(EditText) findViewById(R.id.workout_time);
 
         btn_Workout_Submit =(Button) findViewById(R.id.btn_workout_submit);
         btn_Workout_Update = (Button)findViewById(R.id.btn_workout_update);
@@ -47,11 +39,10 @@ public class AddWorkoutPlan extends AppCompatActivity {
         btn_Workout_Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String workoutNameTXT = Workout_Name.getText().toString();
-                String workoutRepetitionsTXT = Workout_Repetition.getText().toString();
-                String workoutSetsTXT = Workout_Sets.getText().toString();
-                String workoutTimeTXT = Workout_Time.getText().toString();
-
+                String workoutNameTXT = workoutName.getText().toString();
+                String workoutRepetitionsTXT = workoutRepetition.getText().toString();
+                String workoutSetsTXT = workoutSets.getText().toString();
+                String workoutTimeTXT = workoutTime.getText().toString();
 
                 Boolean checkinsertdata = dbWorkout. insertworkoutdata(workoutNameTXT, workoutRepetitionsTXT, workoutSetsTXT, workoutTimeTXT);
                 if(checkinsertdata==true){
@@ -62,17 +53,16 @@ public class AddWorkoutPlan extends AppCompatActivity {
             }
         });
 
-
         //storing edited data
         btn_Workout_Update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String workoutNameTXT = Workout_Name.getText().toString();
-                String workoutRepetitionsTXT = Workout_Repetition.getText().toString();
-                String workoutSetsTXT = Workout_Sets.getText().toString();
-                String workoutTimeTXT = Workout_Time.getText().toString();
+                String workoutNameTXT = workoutName.getText().toString();
+                String workoutRepetitionsTXT = workoutRepetition.getText().toString();
+                String workoutSetsTXT = workoutSets.getText().toString();
+                String workoutTimeTXT = workoutTime.getText().toString();
 
-                Boolean checkupdatedata = dbWorkout.updateworkoutdata(workoutNameTXT,workoutRepetitionsTXT,workoutSetsTXT,workoutTimeTXT);
+                Boolean checkupdatedata = dbWorkout.updateworkoutdata ( workoutNameTXT, workoutRepetitionsTXT, workoutSetsTXT, workoutTimeTXT);
                 if(checkupdatedata==true){
                     Toast.makeText(AddWorkoutPlan.this,"Data Updated Successfully",Toast.LENGTH_SHORT).show();
                 }else {
@@ -84,8 +74,7 @@ public class AddWorkoutPlan extends AppCompatActivity {
         btn_Workout_Delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String workoutNameTXT = Workout_Name.getText().toString();
-
+                String workoutNameTXT = workoutName.getText().toString();
                 Boolean checkdeletedata = dbWorkout.deleteworkoutdata(workoutNameTXT);
                 if(checkdeletedata==true)
                     Toast.makeText(AddWorkoutPlan.this, "Entry Deleted", Toast.LENGTH_SHORT).show();
