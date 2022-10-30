@@ -9,23 +9,13 @@
     android:padding="10dp">
 
 
-    <ImageView
-        android:id="@+id/img_backtoworkoutpage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart=""
-        android:layout_marginTop=""
-        android:contentDescription=""
-        app:srcCompat="@mipmap/ic_back"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <TextView
         android:id="@+id/wk_add_workout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/daysletter"
         android:text="Add Workout Plan "
         android:textColor="@color/orange"
@@ -37,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/wk_add_workout"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/background_edittext"
         android:ems="10"
