@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="63dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="10:00"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/event1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Event 1"
+            android:background="@color/secondaryColor"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:lines="2"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/event2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Event 2"
+            android:background="@color/secondaryColor"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:lines="2"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/event3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Event 3"
+            android:background="@color/secondaryColor"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:lines="2"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>
