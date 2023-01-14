@@ -21,7 +21,7 @@ public class HomeFragment extends Fragment {
 
 
 
-    CardView cardView3,cardView4;
+    CardView cardView3,cardView4,cardView2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,13 +33,14 @@ public class HomeFragment extends Fragment {
 
 
 
-        /*cardView2.setOnClickListener(new View.OnClickListener(){
+        cardView2 = view.findViewById(R.id.cardView2);
+        cardView2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 FragmentTransaction fr= getFragmentManager().beginTransaction();
                 fr.replace(R.id.frame_layout,new WorkoutPage());
                 fr.commit();
             }
-        });*/
+        });
 
         cardView3=view.findViewById(R.id.cardView3);
         cardView3.setOnClickListener(new View.OnClickListener(){

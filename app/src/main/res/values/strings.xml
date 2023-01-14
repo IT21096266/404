@@ -72,5 +72,10 @@
     <string name="map_key" translatable="false">AIzaSyB5TV3WKNkL5oFV8U2L4caFIsBQIkgkP9s</string>
     <string name="step_counter">android.hardware.sensor.stepcounter</string>
     <string name="step_detector">android.hardware.sensor.stepdetector</string>
+
+<!--    Strings for Workout Function-->
+    <string name="workout_name">Workout Name</string>
+    <string name="number_of_repetitions">Number Of Repetitions</string>
+    <string name="submit">Submit</string>
   
 </resources>
