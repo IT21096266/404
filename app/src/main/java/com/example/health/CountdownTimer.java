@@ -104,7 +104,7 @@ public class CountdownTimer extends AppCompatActivity {
             }
 
         };
-        timer.scheduleAtFixedRate(timerTask, 0 ,1000);
+        timer.scheduleAtFixedRate(timerTask, 0 ,13);
     }
 
     private String getTimerText() {

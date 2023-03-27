@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
 import androidx.annotation.Nullable;
 
 public class DBWorkout extends SQLiteOpenHelper {
@@ -39,26 +38,26 @@ public class DBWorkout extends SQLiteOpenHelper {
         }
     }
 
-    public  boolean updateworkoutdata(String workoutName, String workoutRepetitions, String workoutSets, String workoutTime){
+    public  Boolean updateworkoutdata(String workoutName, String workoutRepetitions, String workoutSets, String workoutTime){
         SQLiteDatabase dbWorkout = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("workoutRepetitions",workoutRepetitions);
         contentValues.put("workoutSets",workoutSets);
         contentValues.put("workoutTime",workoutTime);
-        Cursor cursor = dbWorkout.rawQuery("select * from Workoutdetails where workoutName = ?",new String[]{workoutName});
+        Cursor cursor = dbWorkout.rawQuery("select * from Workoutdetails where workoutName = ?", new String[]{workoutName});
         if(cursor.getCount()>0){
-            long result = dbWorkout.update("Workoutdetails",contentValues,"workout_name=?", new String[] {workoutName});
+            long result = dbWorkout.update("Workoutdetails", contentValues, "workoutName=?", new String[]{workoutName});
             if(result==-1){
                 return false;
             }else {
                 return true;
             }
-        }else{
+        }else {
             return false;
         }
     }
 
-    public  boolean deleteworkoutdata(String workoutName){
+    public  Boolean deleteworkoutdata(String workoutName){
         SQLiteDatabase dbWorkout = this.getWritableDatabase();
         Cursor cursor = dbWorkout.rawQuery("select * from Workoutdetails where workoutName = ?",new String[]{workoutName});
         if(cursor.getCount()>0){
@@ -78,6 +77,4 @@ public class DBWorkout extends SQLiteOpenHelper {
         Cursor cursor = dbWorkout.rawQuery("select * from Workoutdetails",null);
         return cursor;
     }
-
-
 }
